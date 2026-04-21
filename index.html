@@ -1130,6 +1130,201 @@
   /* ── TAB CONTENT ── */
   .tab-content { display: none; }
   .tab-content.active { display: grid; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1200px) {
+    nav,
+    nav.scrolled,
+    .services,
+    .shop,
+    .academy,
+    .tattoos,
+    .about,
+    .blog,
+    .book,
+    footer {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+
+    .hero-left {
+      padding: 7rem 2.5rem 3rem 2.5rem;
+    }
+
+    .services-grid,
+    .shop-products {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .academy,
+    .about {
+      gap: 3rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    nav,
+    nav.scrolled {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links {
+      width: 100%;
+      order: 3;
+      justify-content: flex-start;
+      overflow-x: auto;
+      padding-bottom: 0.3rem;
+      gap: 1rem;
+      white-space: nowrap;
+    }
+
+    .hero {
+      grid-template-columns: 1fr;
+      min-height: auto;
+    }
+
+    .hero-left {
+      padding-top: 9rem;
+      padding-bottom: 3rem;
+    }
+
+    .hero-right {
+      min-height: 520px;
+    }
+
+    .hero-ornament {
+      width: 58%;
+    }
+
+    .hero-stats {
+      position: static;
+      transform: none;
+      justify-content: center;
+      padding: 1.5rem 1rem 2rem;
+      gap: 1.5rem;
+    }
+
+    .hero-divider {
+      display: none;
+    }
+
+    .services-header,
+    .shop-header,
+    .academy,
+    .about,
+    .footer-top {
+      grid-template-columns: 1fr;
+      display: grid;
+      gap: 2rem;
+    }
+
+    .shop-header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.2rem;
+    }
+
+    .tattoos-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .tattoo-card.featured {
+      grid-column: 1 / -1;
+      grid-row: auto;
+      min-height: 300px;
+    }
+
+    .blog-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .book-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+      gap: 0.7rem;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 640px) {
+    nav,
+    nav.scrolled,
+    .services,
+    .shop,
+    .academy,
+    .tattoos,
+    .about,
+    .blog,
+    .book,
+    footer {
+      padding-left: 1.2rem;
+      padding-right: 1.2rem;
+    }
+
+    .hero-left {
+      padding: 8.2rem 1.2rem 2rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2.5rem, 11vw, 3.5rem);
+    }
+
+    .hero-actions {
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+      max-width: 320px;
+    }
+
+    .btn-primary,
+    .btn-secondary,
+    .btn-gold,
+    .btn-outline-cream {
+      width: 100%;
+      text-align: center;
+    }
+
+    .services-tabs {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding-bottom: 0.2rem;
+    }
+
+    .tab-btn {
+      flex: 0 0 auto;
+      padding: 0.8rem 1rem;
+      font-size: 0.7rem;
+    }
+
+    .services-grid,
+    .shop-products,
+    .tattoos-grid,
+    .values-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .academy-card-big,
+    .tattoo-card {
+      padding: 1.4rem;
+    }
+
+    .tattoo-thumb {
+      margin: -1.4rem -1.4rem 1rem;
+    }
+
+    .about-quote {
+      font-size: 1.5rem;
+      padding-left: 1.2rem;
+    }
+  }
 </style>
 </head>
 <body>

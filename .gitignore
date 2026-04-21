@@ -24,3 +24,6 @@ pnpm-debug.log*
 tmp/
 temp/
 .cache/
+
+# mr
+mr/
